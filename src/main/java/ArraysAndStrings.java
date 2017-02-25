@@ -53,8 +53,9 @@ public class ArraysAndStrings {
 
     public boolean checkPermutationClean(String s1, String s2){
         if(s1.length() != s2.length()) {
-            return sort(s1).equals(sort(s2));
+            return false;
         }
+        return sort(s1).equals(sort(s2));
     }
 
     /* */
